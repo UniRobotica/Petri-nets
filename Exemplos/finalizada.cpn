@@ -1,0 +1,2320 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+<workspaceElements>
+    <generator tool='CPN Tools' version='4.0.1' format='6'/>
+    <cpnet>
+        <globbox>
+            <block id='ID1412310166'>
+                <id>
+                    Standard priorities
+                </id>
+                <ml id='ID1412310255'>
+                    <layout>
+                        val P_HIGH = 100;
+                    </layout>
+                    val P_HIGH = 100;
+                </ml>
+                <ml id='ID1412310292'>
+                    <layout>
+                        val P_NORMAL = 1000;
+                    </layout>
+                    val P_NORMAL = 1000;
+                </ml>
+                <ml id='ID1412310322'>
+                    <layout>
+                        val P_LOW = 10000;
+                    </layout>
+                    val P_LOW = 10000;
+                </ml>
+            </block>
+            <block id='ID1'>
+                <id>
+                    Standard declarations
+                </id>
+                <color id='ID1412512905'>
+                    <id>
+                        Mat
+                    </id>
+                    <enum>
+                        <id>
+                            M
+                        </id>
+                        <id>
+                            Ci
+                        </id>
+                        <id>
+                            G
+                        </id>
+                        <id>
+                            T
+                        </id>
+                        <id>
+                            A
+                        </id>
+                        <id>
+                            Ac
+                        </id>
+                        <id>
+                            F
+                        </id>
+                        <id>
+                            C
+                        </id>
+                    </enum>
+                    <layout>
+                        colset Mat = with M | Ci | G | T | A | Ac | F | C;
+                    </layout>
+                </color>
+                <color id='ID1412515068'>
+                    <id>
+                        Area
+                    </id>
+                    <int>
+                    </int>
+                    <layout>
+                        colset Area = int;
+                    </layout>
+                </color>
+                <color id='ID1412515071'>
+                    <id>
+                        Dado
+                    </id>
+                    <product>
+                        <id>
+                            Area
+                        </id>
+                        <id>
+                            Mat
+                        </id>
+                    </product>
+                    <layout>
+                        colset Dado = product Area * Mat;
+                    </layout>
+                </color>
+                <var id='ID1412534283'>
+                    <type>
+                        <id>
+                            Area
+                        </id>
+                    </type>
+                    <id>
+                        a
+                    </id>
+                    <id>
+                        a1
+                    </id>
+                    <id>
+                        a2
+                    </id>
+                    <id>
+                        a3
+                    </id>
+                    <id>
+                        a4
+                    </id>
+                    <id>
+                        a5
+                    </id>
+                    <id>
+                        a6
+                    </id>
+                    <id>
+                        a7
+                    </id>
+                    <layout>
+                        var a, a1, a2, a3, a4, a5, a6, a7 : Area;
+                    </layout>
+                </var>
+                <var id='ID1412534285'>
+                    <type>
+                        <id>
+                            Mat
+                        </id>
+                    </type>
+                    <id>
+                        m
+                    </id>
+                    <id>
+                        m1
+                    </id>
+                    <id>
+                        m2
+                    </id>
+                    <id>
+                        m3
+                    </id>
+                    <id>
+                        m4
+                    </id>
+                    <id>
+                        m5
+                    </id>
+                    <id>
+                        m6
+                    </id>
+                    <id>
+                        m7
+                    </id>
+                    <layout>
+                        var m, m1, m2, m3, m4, m5, m6, m7 : Mat;
+                    </layout>
+                </var>
+            </block>
+        </globbox>
+        <page id='ID6'>
+            <pageattr name='New Page'/>
+            <place id='ID1412483671'>
+                <posattr x='-867.000000' y='18.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Entrada
+Dados
+                </text>
+                <ellipse w='88.000000' h='40.000000'/>
+                <token x='-96.000000' y='-112.000000'>
+                    <text>
+                        2
+                    </text>
+                </token>
+                <marking x='-1.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='2' anchor.horizontal='1' anchor.vertical='3'/>
+                    <text>
+                        1`(80,Ci)++
+1`(80,G)
+                    </text>
+                </marking>
+                <type id='ID1412483672'>
+                    <posattr x='-816.000000' y='-6.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483673'>
+                    <posattr x='-868.000000' y='67.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        1`(80, M) ++ 1`(80, Ci) ++ 1`(80, G) ++ 1`(80, T)
+++ 1`(80, A) ++ 1`(80, Ac) ++ 1`(80, F) ++ 1`(80, C)
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483697'>
+                <posattr x='-573.000000' y='18.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Dados
+Coletados
+                </text>
+                <ellipse w='95.000000' h='40.000000'/>
+                <token x='-9.000000' y='0.000000'>
+                    <text>
+                        2
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412483698'>
+                    <posattr x='-519.000000' y='-6.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483699'>
+                    <posattr x='-504.000000' y='41.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483726'>
+                <posattr x='-101.000000' y='336.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Fucia' thick='1' type='Solid'/>
+                <textattr colour='Fucia' bold='false'/>
+                <text>
+                    Madeira
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,M)
+                    </text>
+                </marking>
+                <type id='ID1412483727'>
+                    <posattr x='-59.000000' y='312.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483728'>
+                    <posattr x='-44.000000' y='359.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483758'>
+                <posattr x='-107.000000' y='220.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Purple' thick='1' type='Solid'/>
+                <textattr colour='Purple' bold='false'/>
+                <text>
+                    Cimento
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412483759'>
+                    <posattr x='-65.000000' y='196.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483760'>
+                    <posattr x='-50.000000' y='243.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483793'>
+                <posattr x='-107.000000' y='137.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Navy' thick='1' type='Solid'/>
+                <textattr colour='Navy' bold='false'/>
+                <text>
+                    Gesso
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412483794'>
+                    <posattr x='-65.000000' y='113.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483795'>
+                    <posattr x='-50.000000' y='160.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483831'>
+                <posattr x='-109.000000' y='60.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Blue' thick='1' type='Solid'/>
+                <textattr colour='Blue' bold='false'/>
+                <text>
+                    Tijolo
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,T)
+                    </text>
+                </marking>
+                <type id='ID1412483832'>
+                    <posattr x='-67.000000' y='36.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483833'>
+                    <posattr x='-52.000000' y='83.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483872'>
+                <posattr x='-109.000000' y='-25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Lime' thick='1' type='Solid'/>
+                <textattr colour='Lime' bold='false'/>
+                <text>
+                    Areia
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,A)
+                    </text>
+                </marking>
+                <type id='ID1412483873'>
+                    <posattr x='-67.000000' y='-48.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483874'>
+                    <posattr x='-52.000000' y='-1.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483916'>
+                <posattr x='-106.000000' y='-126.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Yellow' thick='1' type='Solid'/>
+                <textattr colour='Yellow' bold='false'/>
+                <text>
+                    Aco
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,Ac)
+                    </text>
+                </marking>
+                <type id='ID1412483917'>
+                    <posattr x='-64.000000' y='-149.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483918'>
+                    <posattr x='-49.000000' y='-102.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412483963'>
+                <posattr x='-103.000000' y='-228.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Red' thick='1' type='Solid'/>
+                <textattr colour='Red' bold='false'/>
+                <text>
+                    Ferro
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,F)
+                    </text>
+                </marking>
+                <type id='ID1412483964'>
+                    <posattr x='-61.000000' y='-251.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412483965'>
+                    <posattr x='-46.000000' y='-204.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412484059'>
+                <posattr x='-101.000000' y='-363.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Maroon' thick='1' type='Solid'/>
+                <textattr colour='Maroon' bold='false'/>
+                <text>
+                    Concreto
+                </text>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-10.000000' y='0.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412484060'>
+                    <posattr x='-59.000000' y='-386.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412484061'>
+                    <posattr x='-44.000000' y='-339.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412485407'>
+                <posattr x='420.000000' y='24.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Dados
+Processados
+                </text>
+                <ellipse w='88.000000' h='46.000000'/>
+                <token x='-10.000000' y='-2.000000'>
+                    <text>
+                        1
+                    </text>
+                </token>
+                <marking x='-8.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        1`(80,C)
+                    </text>
+                </marking>
+                <type id='ID1412485408'>
+                    <posattr x='475.000000' y='-2.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412485409'>
+                    <posattr x='490.000000' y='50.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412485517'>
+                <posattr x='799.000000' y='25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Relatorio
+Concluido
+                </text>
+                <ellipse w='67.000000' h='51.000000'/>
+                <token x='-10.000000' y='-5.000000'>
+                    <text>
+                    </text>
+                </token>
+                <marking x='1.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412485518'>
+                    <posattr x='842.000000' y='-4.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412485519'>
+                    <posattr x='858.000000' y='53.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <place id='ID1412485851'>
+                <posattr x='1160.000000' y='25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Relatorio
+Exibido
+                </text>
+                <ellipse w='69.000000' h='45.000000'/>
+                <token x='-10.000000' y='-2.000000'>
+                    <text>
+                    </text>
+                </token>
+                <marking x='1.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
+                    <text>
+                        empty
+                    </text>
+                </marking>
+                <type id='ID1412485852'>
+                    <posattr x='1204.000000' y='-1.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        Dado
+                    </text>
+                </type>
+                <initmark id='ID1412485853'>
+                    <posattr x='1220.000000' y='50.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </initmark>
+            </place>
+            <trans id='ID1412487143' explicit='false'>
+                <posattr x='-726.000000' y='18.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Coletar
+Dados
+                </text>
+                <box w='58.000000' h='40.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412487144'>
+                    <posattr x='-764.000000' y='49.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412487145'>
+                    <posattr x='-683.000000' y='49.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412487146'>
+                    <posattr x='-663.000000' y='-34.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412487148'>
+                    <posattr x='-793.000000' y='-13.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412487298' explicit='false'>
+                <posattr x='-420.000000' y='18.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Iniciar
+Calculos
+                </text>
+                <box w='60.000000' h='40.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412487299'>
+                    <posattr x='-459.000000' y='49.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412487300'>
+                    <posattr x='-375.000000' y='49.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412487301'>
+                    <posattr x='-355.000000' y='-34.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412487303'>
+                    <posattr x='-488.000000' y='-13.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412487918' explicit='false'>
+                <posattr x='84.000000' y='336.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Fucia' thick='1' type='Solid'/>
+                <textattr colour='Fucia' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Madeira
+                </text>
+                <box w='180.000000' h='63.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412487919'>
+                    <posattr x='-15.000000' y='378.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412487920'>
+                    <posattr x='189.000000' y='378.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412487921'>
+                    <posattr x='209.000000' y='273.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412487923'>
+                    <posattr x='-44.000000' y='294.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412488088' explicit='false'>
+                <posattr x='85.000000' y='220.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Purple' thick='1' type='Solid'/>
+                <textattr colour='Purple' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Cimento
+                </text>
+                <box w='177.000000' h='62.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412488089'>
+                    <posattr x='-13.000000' y='262.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412488090'>
+                    <posattr x='187.000000' y='262.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412488091'>
+                    <posattr x='207.000000' y='157.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412488093'>
+                    <posattr x='-42.000000' y='178.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412488261' explicit='false'>
+                <posattr x='84.000000' y='137.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Navy' thick='1' type='Solid'/>
+                <textattr colour='Navy' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Gesso
+                </text>
+                <box w='183.000000' h='50.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412488262'>
+                    <posattr x='-16.000000' y='173.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412488263'>
+                    <posattr x='190.000000' y='173.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412488264'>
+                    <posattr x='210.000000' y='80.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412488266'>
+                    <posattr x='-45.000000' y='101.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412488437' explicit='false'>
+                <posattr x='84.000000' y='60.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Blue' thick='1' type='Solid'/>
+                <textattr colour='Blue' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Tijolo
+                </text>
+                <box w='183.000000' h='58.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412488438'>
+                    <posattr x='-16.000000' y='100.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412488439'>
+                    <posattr x='190.000000' y='100.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412488440'>
+                    <posattr x='210.000000' y='-1.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412488442'>
+                    <posattr x='-45.000000' y='20.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412488616' explicit='false'>
+                <posattr x='84.000000' y='-25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Lime' thick='1' type='Solid'/>
+                <textattr colour='Lime' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Areia
+                </text>
+                <box w='178.000000' h='55.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412488617'>
+                    <posattr x='-14.000000' y='14.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412488618'>
+                    <posattr x='187.000000' y='14.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412488619'>
+                    <posattr x='207.000000' y='-84.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412488621'>
+                    <posattr x='-43.000000' y='-63.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412488973' explicit='false'>
+                <posattr x='84.000000' y='-126.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Yellow' thick='1' type='Solid'/>
+                <textattr colour='Yellow' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Aco
+                </text>
+                <box w='180.000000' h='58.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412488974'>
+                    <posattr x='-15.000000' y='-86.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412488975'>
+                    <posattr x='189.000000' y='-86.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412488976'>
+                    <posattr x='209.000000' y='-187.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412488978'>
+                    <posattr x='-44.000000' y='-166.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412489161' explicit='false'>
+                <posattr x='84.000000' y='-228.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Red' thick='1' type='Solid'/>
+                <textattr colour='Red' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Ferro
+                </text>
+                <box w='180.000000' h='58.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412489162'>
+                    <posattr x='-15.000000' y='-188.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412489163'>
+                    <posattr x='189.000000' y='-188.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412489164'>
+                    <posattr x='209.000000' y='-289.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412489166'>
+                    <posattr x='-44.000000' y='-268.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412489352' explicit='false'>
+                <posattr x='95.000000' y='-355.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Maroon' thick='1' type='Solid'/>
+                <textattr colour='Maroon' bold='false'/>
+                <text>
+                    Calcular Resduos e Sugerir
+Descartes e Reuso Concreto
+                </text>
+                <box w='182.000000' h='63.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412489353'>
+                    <posattr x='-5.000000' y='-313.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412489354'>
+                    <posattr x='201.000000' y='-313.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412489355'>
+                    <posattr x='221.000000' y='-418.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412489357'>
+                    <posattr x='-34.000000' y='-397.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412489733' explicit='false'>
+                <posattr x='631.000000' y='25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Gerar
+Relatorio
+                </text>
+                <box w='79.000000' h='29.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412489734'>
+                    <posattr x='582.000000' y='50.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412489735'>
+                    <posattr x='684.000000' y='50.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412489736'>
+                    <posattr x='704.000000' y='-21.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412489738'>
+                    <posattr x='553.000000' y='0.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <trans id='ID1412489933' explicit='false'>
+                <posattr x='944.000000' y='25.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <text>
+                    Salvar
+Relatorio
+                </text>
+                <box w='74.000000' h='31.000000'/>
+                <binding x='7.200000' y='-3.000000'/>
+                <cond id='ID1412489934'>
+                    <posattr x='898.000000' y='51.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </cond>
+                <time id='ID1412489935'>
+                    <posattr x='996.000000' y='51.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </time>
+                <code id='ID1412489936'>
+                    <posattr x='1016.000000' y='-22.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </code>
+                <priority id='ID1412489938'>
+                    <posattr x='869.000000' y='-1.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                    </text>
+                </priority>
+            </trans>
+            <arc id='ID1412492010' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487143'/>
+                <placeend idref='ID1412483671'/>
+                <annot id='ID1412492011'>
+                    <posattr x='-789.000000' y='29.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412492237' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487143'/>
+                <placeend idref='ID1412483697'/>
+                <annot id='ID1412492238'>
+                    <posattr x='-660.000000' y='29.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412492700' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Fucia' thick='1' type='Solid'/>
+                <textattr colour='Fucia' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483726'/>
+                <annot id='ID1412492701'>
+                    <posattr x='-215.000000' y='303.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = M then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412492936' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Fucia' thick='1' type='Solid'/>
+                <textattr colour='Fucia' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487918'/>
+                <placeend idref='ID1412483726'/>
+                <annot id='ID1412492937'>
+                    <posattr x='-38.000000' y='347.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412493175' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Purple' thick='1' type='Solid'/>
+                <textattr colour='Purple' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483758'/>
+                <annot id='ID1412493176'>
+                    <posattr x='-224.000000' y='196.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = Ci then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412493417' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Navy' thick='1' type='Solid'/>
+                <textattr colour='Navy' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483793'/>
+                <annot id='ID1412493418'>
+                    <posattr x='-223.000000' y='127.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = G then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412493662' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Blue' thick='1' type='Solid'/>
+                <textattr colour='Blue' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483831'/>
+                <annot id='ID1412493663'>
+                    <posattr x='-231.000000' y='60.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = T then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412493910' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Blue' thick='1' type='Solid'/>
+                <textattr colour='Blue' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488437'/>
+                <placeend idref='ID1412483831'/>
+                <annot id='ID1412493911'>
+                    <posattr x='-43.000000' y='71.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412494161' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Purple' thick='1' type='Solid'/>
+                <textattr colour='Purple' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488088'/>
+                <placeend idref='ID1412483758'/>
+                <annot id='ID1412494162'>
+                    <posattr x='-41.000000' y='231.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412494415' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Navy' thick='1' type='Solid'/>
+                <textattr colour='Navy' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488261'/>
+                <placeend idref='ID1412483793'/>
+                <annot id='ID1412494416'>
+                    <posattr x='-43.000000' y='148.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412495187' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Lime' thick='1' type='Solid'/>
+                <textattr colour='Lime' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483872'/>
+                <annot id='ID1412495188'>
+                    <posattr x='-224.000000' y='-41.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = A then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412495453' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Lime' thick='1' type='Solid'/>
+                <textattr colour='Lime' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488616'/>
+                <placeend idref='ID1412483872'/>
+                <annot id='ID1412495454'>
+                    <posattr x='-42.000000' y='-14.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412495722' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Yellow' thick='1' type='Solid'/>
+                <textattr colour='Yellow' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483916'/>
+                <annot id='ID1412495723'>
+                    <posattr x='-217.000000' y='-117.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = Ac then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412495994' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Yellow' thick='1' type='Solid'/>
+                <textattr colour='Yellow' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488973'/>
+                <placeend idref='ID1412483916'/>
+                <annot id='ID1412495995'>
+                    <posattr x='-41.000000' y='-115.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412496269' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Red' thick='1' type='Solid'/>
+                <textattr colour='Red' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483963'/>
+                <annot id='ID1412496270'>
+                    <posattr x='-217.000000' y='-219.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = F then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412496547' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Red' thick='1' type='Solid'/>
+                <textattr colour='Red' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489161'/>
+                <placeend idref='ID1412483963'/>
+                <annot id='ID1412496548'>
+                    <posattr x='-40.000000' y='-217.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412496828' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Maroon' thick='1' type='Solid'/>
+                <textattr colour='Maroon' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412484059'/>
+                <annot id='ID1412496829'>
+                    <posattr x='-212.000000' y='-342.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        if m = C then 1`(a, m) 
+else empty
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412497112' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Maroon' thick='1' type='Solid'/>
+                <textattr colour='Maroon' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489352'/>
+                <placeend idref='ID1412484059'/>
+                <annot id='ID1412497113'>
+                    <posattr x='-35.000000' y='-349.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412497399' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Maroon' thick='1' type='Solid'/>
+                <textattr colour='Maroon' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489352'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412497400'>
+                    <posattr x='191.000000' y='-299.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Maroon' thick='0' type='Solid'/>
+                    <textattr colour='Maroon' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412497689' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Red' thick='1' type='Solid'/>
+                <textattr colour='Red' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489161'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412497690'>
+                    <posattr x='196.000000' y='-183.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Red' thick='0' type='Solid'/>
+                    <textattr colour='Red' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412497982' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Yellow' thick='1' type='Solid'/>
+                <textattr colour='Yellow' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488973'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412497983'>
+                    <posattr x='206.000000' y='-99.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Yellow' thick='0' type='Solid'/>
+                    <textattr colour='Yellow' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412498278' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Lime' thick='1' type='Solid'/>
+                <textattr colour='Lime' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488616'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412498279'>
+                    <posattr x='207.000000' y='-25.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Lime' thick='0' type='Solid'/>
+                    <textattr colour='Lime' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412498577' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Blue' thick='1' type='Solid'/>
+                <textattr colour='Blue' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488437'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412498578'>
+                    <posattr x='215.000000' y='59.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Blue' thick='0' type='Solid'/>
+                    <textattr colour='Blue' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412498879' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Navy' thick='1' type='Solid'/>
+                <textattr colour='Navy' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488261'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412498880'>
+                    <posattr x='209.000000' y='114.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Navy' thick='0' type='Solid'/>
+                    <textattr colour='Navy' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412499488' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Purple' thick='1' type='Solid'/>
+                <textattr colour='Purple' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412488088'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412499489'>
+                    <posattr x='218.000000' y='168.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Purple' thick='0' type='Solid'/>
+                    <textattr colour='Purple' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412499799' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Fucia' thick='1' type='Solid'/>
+                <textattr colour='Fucia' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487918'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412499800'>
+                    <posattr x='196.000000' y='271.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Fucia' thick='0' type='Solid'/>
+                    <textattr colour='Fucia' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412500113' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489733'/>
+                <placeend idref='ID1412485407'/>
+                <annot id='ID1412500114'>
+                    <posattr x='541.000000' y='69.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        1`(a,m)++1`(a1, m1)++1`(a2, m2)++
+1`(a3,m3)++ 1`(a4, m4) ++ 1`(a5, m5)
+++ 1`(a6, m6) ++1`(a7, m7)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412500430' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489733'/>
+                <placeend idref='ID1412485517'/>
+                <annot id='ID1412500431'>
+                    <posattr x='721.000000' y='-41.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        1`(a,m)++1`(a1, m1)++1`(a2, m2)++
+1`(a3,m3)++ 1`(a4, m4) ++ 1`(a5, m5)
+++ 1`(a6, m6) ++1`(a7, m7)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412500750' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489933'/>
+                <placeend idref='ID1412485517'/>
+                <annot id='ID1412500751'>
+                    <posattr x='877.000000' y='72.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        1`(a,m)++1`(a1, m1)++1`(a2, m2)++
+1`(a3,m3)++ 1`(a4, m4) ++ 1`(a5, m5)
+++ 1`(a6, m6) ++1`(a7, m7)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412501395' orientation='TtoP' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412489933'/>
+                <placeend idref='ID1412485851'/>
+                <annot id='ID1412501396'>
+                    <posattr x='1094.000000' y='-31.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        1`(a,m)++1`(a1, m1)++1`(a2, m2)++
+1`(a3,m3)++ 1`(a4, m4) ++ 1`(a5, m5)
+++ 1`(a6, m6) ++1`(a7, m7)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <arc id='ID1412591850' orientation='PtoT' order='1'>
+                <posattr x='0.000000' y='0.000000'/>
+                <fillattr colour='White' pattern='' filled='false'/>
+                <lineattr colour='Black' thick='1' type='Solid'/>
+                <textattr colour='Black' bold='false'/>
+                <arrowattr headsize='1.200000' currentcyckle='2'/>
+                <transend idref='ID1412487298'/>
+                <placeend idref='ID1412483697'/>
+                <annot id='ID1412591851'>
+                    <posattr x='-488.000000' y='29.000000'/>
+                    <fillattr colour='White' pattern='Solid' filled='false'/>
+                    <lineattr colour='Black' thick='0' type='Solid'/>
+                    <textattr colour='Black' bold='false'/>
+                    <text tool='CPN Tools' version='4.0.1'>
+                        (a, m)
+                    </text>
+                </annot>
+                <text>
+                </text>
+            </arc>
+            <constraints>
+            </constraints>
+        </page>
+        <instances>
+            <instance id='ID6itop' page='ID6'/>
+        </instances>
+        <options>
+            <option name='realtimestamp'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='fair_be'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='global_fairness'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='outputdirectory'>
+                <value>
+                    <text>
+                        &lt;same as model&gt;
+                    </text>
+                </value>
+            </option>
+            <option name='extensions.10002.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='extensions.10003.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='extensions.10001.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='extensions.10006.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='extensions.10005.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repavg'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repciavg'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repcount'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='repfirstval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='replastval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='repmax'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repmin'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repssquare'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='repssqdev'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='repstddev'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='repsum'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='repvariance'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='avg'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='ciavg'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='count'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='firstval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='lastval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='max'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='min'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='ssquare'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='ssqdev'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='stddev'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='sum'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='variance'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='firstupdate'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='interval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='lastupdate'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedavg'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedciavg'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedcount'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedfirstval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedlastval'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedmax'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedmin'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedssquare'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedssqdev'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedstddev'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedsum'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='untimedvariance'>
+                <value>
+                    <boolean>
+                        false
+                    </boolean>
+                </value>
+            </option>
+        </options>
+        <binders/>
+        <monitorblock name='Monitors'/>
+        <IndexNode expanded='false'>
+            <IndexNode expanded='false'>
+            </IndexNode>
+            <IndexNode expanded='false'>
+            </IndexNode>
+            <IndexNode expanded='false'>
+                <IndexNode expanded='false'>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                    <IndexNode expanded='false'>
+                        <IndexNode expanded='false'>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                            <IndexNode expanded='false'>
+                            </IndexNode>
+                        </IndexNode>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                        <IndexNode expanded='false'>
+                        </IndexNode>
+                    </IndexNode>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                </IndexNode>
+            </IndexNode>
+            <IndexNode expanded='false'>
+                <IndexNode expanded='false'/>
+            </IndexNode>
+            <IndexNode expanded='true'>
+                <IndexNode expanded='false'>
+                    <IndexNode expanded='true'>
+                    </IndexNode>
+                    <IndexNode expanded='true'>
+                    </IndexNode>
+                    <IndexNode expanded='true'>
+                    </IndexNode>
+                </IndexNode>
+                <IndexNode expanded='false'>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                    <IndexNode expanded='false'>
+                    </IndexNode>
+                </IndexNode>
+            </IndexNode>
+            <IndexNode expanded='true'>
+            </IndexNode>
+            <IndexNode expanded='true'>
+            </IndexNode>
+        </IndexNode>
+    </cpnet>
+</workspaceElements>
