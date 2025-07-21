@@ -215,7 +215,7 @@
                 </color>
                 <color id='ID2624876203'>
                     <id>
-                        RECURSOS
+                        EQUIPE
                     </id>
                     <enum>
                         <id>
@@ -238,7 +238,7 @@
                         </id>
                     </enum>
                     <layout>
-                        colset RECURSOS = with ENG | MESTRE | PEDR | PINTOR | CARP | ELET;
+                        colset EQUIPE = with ENG | MESTRE | PEDR | PINTOR | CARP | ELET;
                     </layout>
                 </color>
                 <var id='ID2076413116'>
@@ -375,14 +375,24 @@
                         durN
                     </id>
                 </var>
-                <var id='ID2625665213'>
+                <var id='ID3101529828'>
                     <type>
                         <id>
-                            RECURSOS
+                            EQUIPE
                         </id>
                     </type>
                     <id>
-                        rh
+                        eng
+                    </id>
+                </var>
+                <var id='ID3101573016'>
+                    <type>
+                        <id>
+                            EQUIPE
+                        </id>
+                    </type>
+                    <id>
+                        mo
                     </id>
                 </var>
                 <ml id='ID2512290843'>
@@ -929,7 +939,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595215' serial='1'>
+                <bendpoint id='ID3101808197' serial='1'>
                     <posattr x='1041.000000' y='-6.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -955,7 +965,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595216' serial='1'>
+                <bendpoint id='ID3101808199' serial='1'>
                     <posattr x='1062.000000' y='102.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -981,7 +991,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595218' serial='1'>
+                <bendpoint id='ID3101808201' serial='1'>
                     <posattr x='1036.000000' y='357.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1087,13 +1097,13 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595229' serial='1'>
+                <bendpoint id='ID3101808210' serial='1'>
                     <posattr x='1360.000000' y='48.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                 </bendpoint>
-                <bendpoint id='ID2625595228' serial='1'>
+                <bendpoint id='ID3101808209' serial='1'>
                     <posattr x='1605.000000' y='48.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1199,7 +1209,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595234' serial='1'>
+                <bendpoint id='ID3101808218' serial='1'>
                     <posattr x='2459.000000' y='149.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1285,7 +1295,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595240' serial='1'>
+                <bendpoint id='ID3101808225' serial='1'>
                     <posattr x='1079.000000' y='217.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1331,7 +1341,7 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2599305438' serial='1'>
+                <bendpoint id='ID3101808228' serial='1'>
                     <posattr x='1591.000000' y='148.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1377,13 +1387,13 @@
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2625595247' serial='1'>
+                <bendpoint id='ID3101808233' serial='1'>
                     <posattr x='1333.000000' y='293.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                 </bendpoint>
-                <bendpoint id='ID2625595246' serial='1'>
+                <bendpoint id='ID3101808232' serial='1'>
                     <posattr x='1636.000000' y='293.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1599,17 +1609,17 @@
                 <transend idref='ID2599372003'/>
                 <placeend idref='ID2624656458'/>
                 <annot id='ID2625291738a'>
-                    <posattr x='66.000000' y='-19.000000'/>
+                    <posattr x='19.000000' y='-19.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        1`ENG++ 1`MESTRE++ 3`PEDR
+                        1`eng++ 1`mo
                     </text>
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2626107350' serial='1'>
+                <bendpoint id='ID3101808253' serial='1'>
                     <posattr x='-104.000000' y='-38.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1630,12 +1640,12 @@
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        1`ENG
+                        1`eng
                     </text>
                 </annot>
                 <text>
                 </text>
-                <bendpoint id='ID2626111625' serial='1'>
+                <bendpoint id='ID3101808256' serial='1'>
                     <posattr x='483.000000' y='-38.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
@@ -1659,7 +1669,7 @@
                 <marking x='-15.000000' y='26.000000' hidden='false'>
                     <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
                     <text>
-                        empty
+                        1`(&quot;P1&quot;,C,10,6)@6
                     </text>
                 </marking>
                 <type id='ID2518239132a'>
@@ -2078,7 +2088,7 @@
                 <marking x='3.000000' y='8.000000' hidden='false'>
                     <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
                     <text>
-                        1`(&quot;P1&quot;,FIM,0,44)@46
+                        empty
                     </text>
                 </marking>
                 <type id='ID2519069449a'>
@@ -2299,26 +2309,32 @@
                     EQUIPE
                 </text>
                 <ellipse w='102.000000' h='34.000000'/>
-                <token x='0.000000' y='3.000000'>
+                <token x='-93.000000' y='-5.000000'>
                     <text>
+                        7
                     </text>
                 </token>
-                <marking x='0.000000' y='0.000000' hidden='false'>
+                <marking x='-109.000000' y='-15.000000' hidden='false'>
                     <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
                     <text>
+                        1`MESTRE++
+2`PEDR++
+1`PINTOR++
+1`CARP++
+2`ELET
                     </text>
                 </marking>
                 <type id='ID2624656458a'>
-                    <posattr x='290.000000' y='-62.000000'/>
+                    <posattr x='268.000000' y='-55.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        RECURSOS
+                        EQUIPE
                     </text>
                 </type>
                 <initmark id='ID2624656458b'>
-                    <posattr x='288.000000' y='-71.000000'/>
+                    <posattr x='288.000000' y='-5.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='1' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
