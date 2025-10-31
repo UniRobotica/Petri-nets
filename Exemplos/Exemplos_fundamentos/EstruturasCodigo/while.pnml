@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="while_loop" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <place id="p_init"><name><text>start</text></name><initialMarking><text>1</text></initialMarking></place>
+    <transition id="t_eval"><name><text>eval(cond)</text></name></transition>
+    <place id="p_body"><name><text>body</text></name></place>
+    <transition id="t_body"><name><text>body_exec</text></name></transition>
+    <place id="p_after"><name><text>after</text></name></place>
+    <transition id="t_exit"><name><text>exit</text></name></transition>
+    <arc id="a1" source="p_init" target="t_eval"/>
+    <arc id="a2" source="t_eval" target="p_body"/>
+    <arc id="a3" source="p_body" target="t_body"/>
+    <arc id="a4" source="t_body" target="p_init"/>
+    <arc id="a5" source="t_eval" target="p_after"/>
+    <arc id="a6" source="p_after" target="t_exit"/>
+    <arc id="a7" source="t_exit" target="p_after"/>
+  </net>
+</pnml>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="parallel" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <place id="p_start"><name><text>start</text></name><initialMarking><text>1</text></initialMarking></place>
+    <transition id="t_fork"><name><text>fork</text></name></transition>
+    <place id="p_a"><name><text>taskA</text></name></place>
+    <place id="p_b"><name><text>taskB</text></name></place>
+    <transition id="t_a"><name><text>execA</text></name></transition>
+    <transition id="t_b"><name><text>execB</text></name></transition>
+    <place id="p_a_done"><name><text>a_done</text></name></place>
+    <place id="p_b_done"><name><text>b_done</text></name></place>
+    <transition id="t_join"><name><text>join</text></name></transition>
+    <place id="p_end"><name><text>end</text></name></place>
+    <arc id="a1" source="p_start" target="t_fork"/>
+    <arc id="a2" source="t_fork" target="p_a"/>
+    <arc id="a3" source="t_fork" target="p_b"/>
+    <arc id="a4" source="p_a" target="t_a"/>
+    <arc id="a5" source="t_a" target="p_a_done"/>
+    <arc id="a6" source="p_b" target="t_b"/>
+    <arc id="a7" source="t_b" target="p_b_done"/>
+    <arc id="a8" source="p_a_done" target="t_join"/>
+    <arc id="a9" source="p_b_done" target="t_join"/>
+    <arc id="a10" source="t_join" target="p_end"/>
+  </net>
+</pnml>
