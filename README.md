@@ -1,2 +1,2 @@
-# VSSS-BahiaRT-Petri-nets
+# UniRobotica-Petri-nets
 
